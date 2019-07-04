@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>生物信息学项目驱动实战</title>
-  <meta name="description" content="生物信息学项目驱动实战" />
+  <title>3 生物数据 | 生物信息学项目驱动实战</title>
+  <meta name="description" content="3 生物数据 | 生物信息学项目驱动实战" />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="生物信息学项目驱动实战" />
+  <meta property="og:title" content="3 生物数据 | 生物信息学项目驱动实战" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="生物信息学项目驱动实战" />
+  <meta name="twitter:title" content="3 生物数据 | 生物信息学项目驱动实战" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="introduction-to-single-cell-rna-seq.html">
 
-<link rel="next" href="introduction-to-single-cell-rna-seq.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -187,34 +187,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">生物信息学项目驱动实战</h1>
-<p class="author"><em><a href='https://github.com/lemonbases'>碱基吃柠檬</a></em></p>
-<p class="date"><em>2019-07-04</em></p>
-</div>
-<div id="section" class="section level1">
-<h1><span class="header-section-number">1</span> 说在前面的话</h1>
+<div id="biodata" class="section level1">
+<h1><span class="header-section-number">3</span> 生物数据</h1>
 <blockquote>
-<p>你不再做你当初想做的事情，是因为停下脚步的理由最终战胜了继续前进的理由，因此，你要强化继续前进的理由，要么弱化停止脚步的理由。
-– 安德斯•埃利克森 《刻意练习》</p>
+<p>我们不产生数据，我们只是数据的搬运工</p>
 </blockquote>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> </code></pre>
-<div id="section-1" class="section level2">
-<h2><span class="header-section-number">1.1</span> 关于本项目</h2>
-<p>在本项目中，我们将会由浅入深地介绍生物信息学及相关内容，内容将覆盖基本入门基础，以及现在热点领域所使用到的分析技巧等等。通过我们记录我们自己的项目分析，来分享生物信息学技术。</p>
+<div id="section-6" class="section level2">
+<h2><span class="header-section-number">3.1</span> 常用生物数据库</h2>
 </div>
-<div id="section-2" class="section level2">
-<h2><span class="header-section-number">1.2</span> 许可</h2>
-<p>本课程所有资料均遵循<strong>GPL-3</strong>协议。 欢迎任何人浏览材料来学习。 如果您打算将这些材料用于您自己的教学，除了提供合适的引用外，如果您告诉我们，我们将不胜感激。</p>
+<div id="section-7" class="section level2">
+<h2><span class="header-section-number">3.2</span> 常见生物数据格式</h2>
+<p><a href="http://genome.ucsc.edu/FAQ/FAQformat.html">UCSC注释文件</a></p>
+<div id="section-8" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> 生物数据下载</h3>
+<div id="section-9" class="section level4">
+<h4><span class="header-section-number">3.2.1.1</span> 测序数据下载</h4>
+<p>测序数据一般存储在NCBI的GEO/SRA数据库，或者EBI的ENA数据库。我们希望下载完整的数据，并在最短的时间内完成，对此有以下几种方法。</p>
+<ul>
+<li>使用ENA获得数据的fastq.gz地址，fastq.gz文件可直接用于下游分析，而且ENA提供文件的md5 hash值，下载完成后可用<code>md5sum</code>检查文件完整性。可使用<a href="https://downloads.asperasoft.com">Aspera</a>下载，Aspera是IBM开发的数据传输工具。其可在Windows/Linux/MAC多平台下运行。
+ascp参数如下：</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">ascp</span> -T -l 300m -P33001 -k1 -i asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR874/009/SRR8740819/SRR8740819_2.fastq.gz .
+<span class="co"># ascp [OPTION] SRC... DEST</span>
+<span class="co"># -T                               Disable encryption</span>
+<span class="co"># -l  MAX-RATE                     Max transfer rate</span>
+<span class="co"># -P  SSH-PORT                     TCP port used for SSH authentication</span>
+<span class="co"># -k  RESUME-LEVEL                 Resume criterion: 0,3,2,1</span>
+<span class="co"># -i  PRIVATE-KEY-FILE             Private-key file name (id_rsa)</span></code></pre>
+<ul>
+<li>下载sra数据，利用NCBI sratoolkit中<code>prefetch</code>命令</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">prefetch</span> ACCESSION_ID</code></pre>
+<ul>
+<li>在获取sra或者fastq文件ftp链接后，使用<code>wget</code>,<code>curl</code>,<code>aria2c</code>，或者迅雷下载等</li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">wget</span> -c FTP_LINK
+<span class="ex">curl</span> -O FTP_LINK
+<span class="ex">aria2c</span> -j16 -x16 -c true FTP_LINK</code></pre>
 </div>
-<div id="section-3" class="section level2">
-<h2><span class="header-section-number">1.3</span> 准备知识</h2>
-<p>在本书中，我们将会使用的到基本的linux, R, python等知识。但即使你是个初学者，你也不用因为没有任何基础而沮丧，跟随本课程提供入门训练(仅仅是入门训练)，你会掌握相应的技能来完成各个项目实战。当然，网络上会有很多比我们能够提供的更优秀的平台或者是材料，我们也会推荐给大家。</p>
+<div id="section-10" class="section level4">
+<h4><span class="header-section-number">3.2.1.2</span> 注释数据下载</h4>
 </div>
-<div id="section-4" class="section level2">
-<h2><span class="header-section-number">1.4</span> 联系我们</h2>
-<p>如果您有任何的关于的意见，问题和建议,请直接在本repo下开issue进行说明.</p>
+<div id="section-11" class="section level4">
+<h4><span class="header-section-number">3.2.1.3</span> 爬虫</h4>
+</div>
+</div>
+<div id="section-12" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> 数据格式转换</h3>
+<p><a href="http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/">UCSC ulity</a></p>
 
+</div>
 </div>
 </div>
             </section>
@@ -222,8 +244,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="introduction-to-single-cell-rna-seq.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="introduction-to-single-cell-rna-seq.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -253,7 +275,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/index.Rmd",
+"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/03data.Rmd",
 "text": "Edit"
 },
 "history": {
