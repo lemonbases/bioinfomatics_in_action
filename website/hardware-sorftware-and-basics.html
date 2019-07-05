@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>生物信息学项目驱动实战</title>
-  <meta name="description" content="生物信息学项目驱动实战" />
+  <title>2 硬件，软件，与基础 | 生物信息学项目驱动实战</title>
+  <meta name="description" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="生物信息学项目驱动实战" />
+  <meta property="og:title" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="生物信息学项目驱动实战" />
+  <meta name="twitter:title" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction-to-single-cell-rna-seq.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="biodata.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -132,8 +132,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 排版约定</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#section-1.5"><i class="fa fa-check"></i><b>1.5</b> 联系我们</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="introduction-to-single-cell-rna-seq.html"><a href="introduction-to-single-cell-rna-seq.html"><i class="fa fa-check"></i><b>2</b> scRNA-seq介绍</a><ul>
-<li class="chapter" data-level="2.1" data-path="introduction-to-single-cell-rna-seq.html"><a href="introduction-to-single-cell-rna-seq.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 环境与工具的准备</a></li>
+<li class="chapter" data-level="2" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html"><i class="fa fa-check"></i><b>2</b> 硬件，软件，与基础</a><ul>
+<li class="chapter" data-level="2.1" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 几个问题</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html#linuxwindows"><i class="fa fa-check"></i><b>2.1.1</b> Linux还是Windows?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html#matlabpythonr"><i class="fa fa-check"></i><b>2.1.2</b> 可以使用Matlab来替代python或者是R吗？</a></li>
+<li class="chapter" data-level="2.1.3" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html#section"><i class="fa fa-check"></i><b>2.1.3</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="hardware-sorftware-and-basics.html"><a href="hardware-sorftware-and-basics.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 基本环境</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="biodata.html"><a href="biodata.html"><i class="fa fa-check"></i><b>3</b> 生物数据</a><ul>
 <li class="chapter" data-level="3.1" data-path="biodata.html"><a href="biodata.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 常用生物数据库</a></li>
@@ -162,35 +167,90 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">生物信息学项目驱动实战</h1>
-<p class="author"><em><a href='https://github.com/lemonbases'>碱基吃柠檬</a></em></p>
-<p class="date"><em>2019-07-05</em></p>
+<div id="hardware-sorftware-and-basics" class="section level1">
+<h1><span class="header-section-number">2</span> 硬件，软件，与基础</h1>
+<div id="section-2.1" class="section level2">
+<h2><span class="header-section-number">2.1</span> 几个问题</h2>
+<div id="linuxwindows" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Linux还是Windows?</h3>
+<p><strong>Linux</strong> 现在主流的分析流程一般都会在linux系统上来完成。也许我们会疑惑，windows系统不管怎么样，都是桌面级系统的大哥大，在服务器市场也是占有极大的份额，怎么就不用windows了？（这里我们不谈Mac,牵强一点，我们可把Mac和linux归结于一类），原因有很多，网上一搜一大把，说什么的都有，稳定，多用户等等，下面是我自己的一些观点：</p>
+<ul>
+<li>开源： 学术数据库或者是软件一般都是无偿使用的，一般会遵守GPL-3或者MIT这种开源协议，linux的作者本人也是极端强调开源的人。如果你要开发一个工具，你可以直接把别人的工具拿过来修改作为自己的子模块，只要不盈利，就不用担心侵权的问题。这就是你可以直接站在巨人的肩膀上的意思吧。</li>
+<li>门槛低： 是的，听起来好像很矛盾，但是linux做生物信息学数据库/软件开发门槛是非常低的(不要用VB写hello world的来杠)，你可以不熟悉数据结构，不懂负载均衡，只要你的方法能够比已经有的算法更好更准，即使你用PHP来做数据分析，都不用配置apache/nginx,直接　php analysis.php，都可以发个Bioinformatics(只是调侃，不过现在的工具的水平还真的是参差不齐)。</li>
+<li>性价比:　linux系统的体量相对于win来说是偏低的，而且还可以进一步压缩到最小代码量。按理说，如果你可以获取root权限，就可以更改这个linux里面所有东西。这样你的程序本身就可以和更少的系统进程抢夺资源，也就是说能跑的更快点吧。</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># 亲测，不可用(ubuntu 16.04 server)</span>
+<span class="fu">sudo</span> rm -rf /*</code></pre></div>
+<p>以上都是我瞎想的，也有抖机灵的成分。当然啦，现在你也可以拿Windows做完一套RNA-seq分析，毕竟window的用户体量太大，有需求就会有市场，而且如果不是处理大批量的数据，用Window也是足够的，本项目是基于linux教学的，当然，以后如果有时间，也可以做一份完全基于Window的材料。</p>
 </div>
-<div id="section-1" class="section level1">
-<h1><span class="header-section-number">1</span> 说在前面的话</h1>
-<blockquote>
-<p>你不再做你当初想做的事情，是因为停下脚步的理由最终战胜了继续前进的理由，因此，你要强化继续前进的理由，要么弱化停止脚步的理由。 – 安德斯•埃利克森 《刻意练习》</p>
-</blockquote>
-<div id="section-1.1" class="section level2">
-<h2><span class="header-section-number">1.1</span> 关于本项目</h2>
-<p>在本项目中，我们将会由浅入深地介绍生物信息学及相关内容，内容将覆盖基本入门基础，以及现在热点领域所使用到的分析技巧等等。通过我们记录我们自己的项目分析，在分享生物信息学知识的同时，也希望大家能够指出能我们工作的短板，能够互相学习，共同进步。</p>
+<div id="matlabpythonr" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> 可以使用Matlab来替代python或者是R吗？</h3>
+<p><strong>当然可以</strong></p>
+<p>通过这个问题，我们要阐明一个立场，如果你对程序语言所知甚少，或者是你这是要解决一个特定的问题，并且你还有商用软件的使用权限，那就去用商用软件吧，入门门槛稍低，跨平台也做得十分好。开源软件虽然很多，但是真的良莠不齐。“人生苦短，我用python”，而不是“人生苦短，我学python”.</p>
 </div>
-<div id="section-1.2" class="section level2">
-<h2><span class="header-section-number">1.2</span> 许可</h2>
-<p>本课程所有资料均遵循<strong>GPL-3</strong>协议。 欢迎任何人浏览材料来学习。 如果您打算将这些材料用于您自己的教学，除了提供合适的引用外，如果您告诉我们，我们将不胜感激。</p>
+<div id="section" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> </h3>
 </div>
-<div id="section-1.3" class="section level2">
-<h2><span class="header-section-number">1.3</span> 准备知识</h2>
-<p>在本书中，我们将会使用的到基本的linux, R, python等知识。但即使你是个初学者，你也不用因为没有任何基础而沮丧，跟随本课程提供入门训练(仅仅是入门训练)，你会掌握相应的技能来完成各个项目实战。当然，网络上会有很多比我们能够提供的更优秀的平台或者是材料，届时我们也会推荐给大家。</p>
 </div>
-<div id="section-1.4" class="section level2">
-<h2><span class="header-section-number">1.4</span> 排版约定</h2>
-<p>下面是本项目在英文字体上的约定 标题中带有星号(*)，表示这段是选读内容(技能)，不影响整个流程的执行。</p>
-</div>
-<div id="section-1.5" class="section level2">
-<h2><span class="header-section-number">1.5</span> 联系我们</h2>
-<p>如果您有任何的关于的意见，问题和建议,请直接在本repo下开issue进行说明.</p>
+<div id="section-2.2" class="section level2">
+<h2><span class="header-section-number">2.2</span> 基本环境</h2>
+<p>以下是本项目的基本环境</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">环境</th>
+<th align="center">名称</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">CPU</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">内存</td>
+<td align="center">128G</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">存储</td>
+<td align="center">3T</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">系统</td>
+<td align="center">ubuntu 16.04</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">软件管理</td>
+<td align="center">Miniconda</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">版本控制</td>
+<td align="center">Git</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">流程软件</td>
+<td align="center">snakemake</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">绘图软件</td>
+<td align="center">R</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">互动界面</td>
+<td align="center">R shiny</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -199,8 +259,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </div>
         </div>
       </div>
-
-<a href="introduction-to-single-cell-rna-seq.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="biodata.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -230,7 +290,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/index.Rmd",
+"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/02intro.Rmd",
 "text": "Edit"
 },
 "history": {
