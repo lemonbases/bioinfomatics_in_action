@@ -11,7 +11,18 @@ output: html_document
 
 ## 常见生物数据格式
 
+- fasta
+- fastq(encoding format check)
+- gff/gtf/bed/... 
+- vcf
+- sam/bam
+
+![NGS format](https://bioinf.comav.upv.es/courses/sequence_analysis/_images/ngs_map_read_file_formats.png)
+![NGS format](https://bioinf.comav.upv.es/courses/sequence_analysis/_images/ngs_file_formats.png)
+
 [UCSC注释文件](http://genome.ucsc.edu/FAQ/FAQformat.html)
+
+[EDAM ontology](https://www.ebi.ac.uk/ols/ontologies/edam/terms?iri=http%3A%2F%2Fedamontology.org%2Fdata_3670)
 
 ### 生物数据下载
 
@@ -41,8 +52,6 @@ wget -c FTP_LINK
 curl -O FTP_LINK
 aria2c -j16 -x16 -c true FTP_LINK
 ```
-
-
 
 #### 注释数据下载
 

@@ -2,7 +2,7 @@
 title: "生物信息学项目驱动实战"
 author: "<a href='https://github.com/lemonbases'>碱基吃柠檬</a>"
 
-date: "2019-07-05"
+date: "2019-07-18"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: bookdown::gitbook

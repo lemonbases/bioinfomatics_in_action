@@ -2,4 +2,4 @@ book_filename: "Binformatics_in_Action"
 chapter_name: ""
 output_dir: website
 new_session: yes
-rmd_files: ["index.Rmd","02intro.Rmd","03data.Rmd"]
+rmd_files: ["index.Rmd","02intro.Rmd","03data.Rmd","04tools.Rmd","05project1.Rmd"]

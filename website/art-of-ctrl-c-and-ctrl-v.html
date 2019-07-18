@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 硬件，软件，与基础 | 生物信息学项目驱动实战</title>
-  <meta name="description" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
+  <title>5 项目1一单细胞数据分析实战 | 生物信息学项目驱动实战</title>
+  <meta name="description" content="5 项目1一单细胞数据分析实战 | 生物信息学项目驱动实战" />
   <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
+  <meta property="og:title" content="5 项目1一单细胞数据分析实战 | 生物信息学项目驱动实战" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 硬件，软件，与基础 | 生物信息学项目驱动实战" />
+  <meta name="twitter:title" content="5 项目1一单细胞数据分析实战 | 生物信息学项目驱动实战" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="biodata.html">
+<link rel="prev" href="biotools.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -71,43 +71,6 @@
 </script>
 
 
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -157,6 +120,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.1" data-path="art-of-ctrl-c-and-ctrl-v.html"><a href="art-of-ctrl-c-and-ctrl-v.html#section-5.1"><i class="fa fa-check"></i><b>5.1</b> 单细胞分析流程学习</a></li>
 <li class="chapter" data-level="5.2" data-path="art-of-ctrl-c-and-ctrl-v.html"><a href="art-of-ctrl-c-and-ctrl-v.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 文章重复</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="art-of-ctrl-c-and-ctrl-v.html"><a href="art-of-ctrl-c-and-ctrl-v.html#single-cell-transcriptomics-of-human-and-mouse-lung-cancers-reveals-conserved-myeloid-populations-across-individuals-and-species"><i class="fa fa-check"></i><b>5.2.1</b> 标题：Single-Cell Transcriptomics of Human and Mouse Lung Cancers Reveals Conserved Myeloid Populations across Individuals and Species</a></li>
+<li class="chapter" data-level="5.2.2" data-path="art-of-ctrl-c-and-ctrl-v.html"><a href="art-of-ctrl-c-and-ctrl-v.html#section-5.2.2"><i class="fa fa-check"></i><b>5.2.2</b> 重复过程</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -179,91 +143,52 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="hardware-sorftware-and-basics" class="section level1">
-<h1><span class="header-section-number">2</span> 硬件，软件，与基础</h1>
-<div id="section-2.1" class="section level2">
-<h2><span class="header-section-number">2.1</span> 几个问题</h2>
-<div id="linuxwindows" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Linux还是Windows?</h3>
-<p><strong>Linux</strong> 现在主流的分析流程一般都会在linux系统上来完成。也许我们会疑惑，windows系统不管怎么样，都是桌面级系统的大哥大，在服务器市场也是占有极大的份额，怎么就不用windows了？（这里我们不谈Mac,牵强一点，我们可把Mac和linux归结于一类），原因有很多，网上一搜一大把，说什么的都有，稳定，多用户等等，下面是我自己的一些观点：</p>
-<ul>
-<li>开源： 学术数据库或者是软件一般都是无偿使用的，一般会遵守GPL-3或者MIT这种开源协议，linux的作者本人也是极端强调开源的人。如果你要开发一个工具，你可以直接把别人的工具拿过来修改作为自己的子模块，只要不盈利，就不用担心侵权的问题。这就是你可以直接站在巨人的肩膀上的意思吧。</li>
-<li>门槛低： 是的，听起来好像很矛盾，但是linux做生物信息学数据库/软件开发门槛是非常低的(不要用VB写hello world的来杠)，你可以不熟悉数据结构，不懂负载均衡，只要你的方法能够比已经有的算法更好更准，即使你用PHP来做数据分析，都不用配置apache/nginx,直接　php analysis.php，都可以发个Bioinformatics(只是调侃，不过现在的工具的水平还真的是参差不齐)。</li>
-<li>性价比:　linux系统的体量相对于win来说是偏低的，而且还可以进一步压缩到最小代码量。按理说，如果你可以获取root权限，就可以更改这个linux里面所有东西。这样你的程序本身就可以和更少的系统进程抢夺资源，也就是说能跑的更快点吧。</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># 亲测，不可用(ubuntu 16.04 server)</span>
-<span class="fu">sudo</span> rm -rf /*</code></pre></div>
-<p>以上都是我瞎想的，也有抖机灵的成分。当然啦，现在你也可以拿Windows做完一套RNA-seq分析，毕竟window的用户体量太大，有需求就会有市场，而且如果不是处理大批量的数据，用Window也是足够的，本项目是基于linux教学的，当然，以后如果有时间，也可以做一份完全基于Window的材料。</p>
+<div id="art-of-ctrl-c-and-ctrl-v" class="section level1">
+<h1><span class="header-section-number">5</span> 项目1一单细胞数据分析实战</h1>
+<blockquote>
+<p>Single cell, Single cell, single all the way… 如果有人问，这几年生物信息学热点在哪里？ 我觉得单细胞算是一个，好吧，单细胞真的很热很热，用不着谁觉得。</p>
+</blockquote>
+<div id="section-5.1" class="section level2">
+<h2><span class="header-section-number">5.1</span> 单细胞分析流程学习</h2>
+<p>网络上铺天盖地的教程，数不胜数。而且不像传统的bulk-RNA-seq那样，单细胞测序方法五花八门，降维方法千奇百怪，真可谓是神魔共舞，万物疯长。现在几大公司也是争分夺秒，业内几位大佬更想一锤定音，成为该领域那个定规矩的人。 我们不会再解释单细胞”是什么？为什么？“这样的问题，想要有详细了解的话，我们建议参考:</p>
+<p><a href="https://scrnaseq-course.cog.sanger.ac.uk/website/index.html">hemberg-lab/scRNA.seq.course</a></p>
+<p>或者是有本项目组翻译翻译版本（我们郑重承诺，非机翻，而且不仅仅是翻译哦）</p>
+<p><a href="https://lemonbases.github.io/scRNA.seq.course.CN/index.html">lemonbases/scRNA.seq.course.CN</a></p>
 </div>
-<div id="matlabpythonr" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> 可以使用Matlab来替代python或者是R吗？</h3>
-<p><strong>当然可以</strong></p>
-<p>通过这个问题，我们要阐明一个立场，如果你对程序语言所知甚少，或者是你这是要解决一个特定的问题，并且你还有商用软件的使用权限，那就去用商用软件吧，入门门槛稍低，跨平台也做得十分好。开源软件虽然很多，但是真的良莠不齐。“人生苦短，我用python”，而不是“人生苦短，我学python”.</p>
+<div id="section-5.2" class="section level2">
+<h2><span class="header-section-number">5.2</span> 文章重复</h2>
+<blockquote>
+<p>熟读唐诗三百首，不会做也会吟</p>
+</blockquote>
+<p><img width="54%" src="https://i.redd.it/5hay7sbgo4w11.png"/> <img width="44%" src="https://marlin-prod.literatumonline.com/cms/attachment/2e838343-86e7-468b-a2ad-9563062489ca/fx1.jpg"/> （左图来源与https://i.redd.it/5hay7sbgo4w11.png， 右图来源于本文章的graphical abstract）</p>
+<div id="single-cell-transcriptomics-of-human-and-mouse-lung-cancers-reveals-conserved-myeloid-populations-across-individuals-and-species" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> 标题：Single-Cell Transcriptomics of Human and Mouse Lung Cancers Reveals Conserved Myeloid Populations across Individuals and Species</h3>
+<div id="summary" class="section level4">
+<h4><span class="header-section-number">5.2.1.1</span> Summary</h4>
+<p><strong>Tumor-infiltrating myeloid cells (TIMs, 肿瘤浸润性骨髓细胞)</strong> 包括单核细胞，巨噬细胞，树突细胞和嗜中性粒细胞，这些细胞已经成为癌症生长的关键调节因素。 这些细胞可能进入一系列的状态，可能会促进也可能抑制肿瘤的生长。在本文中，作者使用单细胞测序技术来map肺癌患者的非小细胞?(non-small-cell), 然后检测出了25个TIM状态，其中，大多数状态在患者间是重复存在的。为了促进这些人群的转化研究，他们也做了TIM在小书中的研究。 在人与小鼠跨物种进行比较的时候，他们发现树突细胞和单核细胞之间的种群结构几乎完全一致; 中性粒细胞亚群是保守的，巨噬细胞在物种间有差异。 相比之下，患者血液中的髓样细胞群结构与TIM的重叠较少。 这个研究确定了肺TIM的全景，并为将来研究免疫治疗靶点TIM的潜力奠定下了基础。</p>
 </div>
-<div id="section" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> </h3>
+<div id="results" class="section level4">
+<h4><span class="header-section-number">5.2.1.2</span> results</h4>
+<ol style="list-style-type: decimal">
+<li>scRNA-seq谱图分析人和小鼠肺癌中的免疫细胞基因表达</li>
+<li>人与小鼠之间免疫细胞的无偏差比较解释了主要基因表达程序的广泛保守性</li>
+<li>人和小鼠肺肿瘤含有一直和不同的中性粒细胞</li>
+<li>人鼠间，树突状细胞有四个不同的保守的亚群</li>
+<li>单核细胞亚群在小鼠和人类之间保守，而巨噬细胞亚群显示物种特异性模式</li>
+<li>为TIM的子集定义了不同的Marker Genes 及其与患者存活的关联性</li>
+<li>小鼠模型，免疫疗法和免疫表型分析靶向小鼠和患者肿瘤浸润免疫细胞的基因</li>
+<li>肿瘤仅与外周血的状态部分地重叠渗透</li>
+</ol>
+</div>
+<div id="methods" class="section level4">
+<h4><span class="header-section-number">5.2.1.3</span> Methods</h4>
 </div>
 </div>
-<div id="section-2.2" class="section level2">
-<h2><span class="header-section-number">2.2</span> 基本环境</h2>
-<p>以下是本项目的基本环境</p>
-<table>
-<thead>
-<tr class="header">
-<th align="center">环境</th>
-<th align="center">名称</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">CPU</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center">内存</td>
-<td align="center">128G</td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center">存储</td>
-<td align="center">3T</td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center">系统</td>
-<td align="center">ubuntu 16.04</td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center">软件管理</td>
-<td align="center">Miniconda</td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center">版本控制</td>
-<td align="center">Git</td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center">流程软件</td>
-<td align="center">snakemake</td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center">绘图软件</td>
-<td align="center">R</td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center">互动界面</td>
-<td align="center">R shiny</td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table>
+<div id="section-5.2.2" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> 重复过程</h3>
+<p>文章从前到后做了不少工作，我们对wet部分可以说知之甚少，只关注数据处理部分 #### 环境配置 作者使用了Github中的</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -271,8 +196,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="biodata.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="biotools.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -302,7 +227,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/02intro.Rmd",
+"link": "https://github.com/lemonbases/scRNA.seq.course.CN/edit/master/05project1.Rmd",
 "text": "Edit"
 },
 "history": {
